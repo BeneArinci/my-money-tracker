@@ -1,0 +1,6 @@
+/node_modules
+/public/scripts/app.js
+yarn.lock
+.prettierrc
+settings.json
+dist
