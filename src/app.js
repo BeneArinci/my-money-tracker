@@ -19,10 +19,15 @@ const SupportPage = () => {
   return <div>Support page</div>
 }
 
+const ErrorPage = () => {
+  return <div>This is an error page</div>
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <ExpensesDashboardPage />,
+    errorElement: ErrorPage,
   },
   { path: '/add-expense', element: <AddExpensePage /> },
   { path: '/edit-expense', element: <EditExpensePage /> },
