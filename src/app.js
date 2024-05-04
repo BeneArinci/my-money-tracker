@@ -2,15 +2,23 @@ import 'normalize.css'
 import { createRoot } from 'react-dom/client'
 import {
   Link,
+  NavLink,
   Outlet,
   RouterProvider,
   createBrowserRouter,
 } from 'react-router-dom'
 import './styles/styles.scss'
+import NavBarLink from './components/NavBarLink'
 
 const Header = (props) => (
   <div>
-    <h1>This is my header</h1>
+    <div>
+      <h1>This is my header</h1>
+      <NavBarLink to="/" label={'Dashboard'} />
+      <NavBarLink to="/add-expense" label={'Add Expense'} />
+      <NavBarLink to="/edit-expense" label={'Edit Expense'} />
+      <NavBarLink to="/support" label={'Support'} />
+    </div>
     {props.children}
   </div>
 )
