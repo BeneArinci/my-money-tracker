@@ -1,5 +1,8 @@
+import { useParams } from 'react-router-dom'
+
 const EditExpensePage = () => {
-  return <div>Edit Expense</div>
+  const params = useParams()
+  return <div>Editing expense with id: {params.id}</div>
 }
 
 export default EditExpensePage
